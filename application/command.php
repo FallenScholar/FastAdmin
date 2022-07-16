@@ -11,6 +11,9 @@
 // +----------------------------------------------------------------------
 
 return [
+    'app\command\Migration', // 生成迁移文件
+    'app\command\Migrate', // 执行迁移文件
+
     'app\admin\command\Crud',
     'app\admin\command\Menu',
     'app\admin\command\Install',
