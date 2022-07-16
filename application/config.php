@@ -30,7 +30,11 @@ return [
     // 注册的根命名空间
     'root_namespace'         => [],
     // 扩展函数文件
-    'extra_file_list'        => [THINK_PATH . 'helper' . EXT],
+    'extra_file_list'        => [
+        THINK_PATH . 'helper' . EXT,
+        APP_PATH . 'helpers/common' . EXT, // 公共函数
+        APP_PATH . 'helpers/switch' . EXT // 转换函数
+    ],
     // 默认输出类型
     'default_return_type'    => 'html',
     // 默认AJAX 数据返回格式,可选json xml ...
