@@ -11,7 +11,7 @@ use think\Db;
  */
 class MigrationTemplate
 {
-    public function createTable()
+    public function run()
     {
         Db::execute(
 <<<SQL
@@ -24,7 +24,7 @@ SQL
         );
     }
 
-    public function dropTable()
+    public function rollback()
     {
         Db::execute("drop table `table_name`;");
     }
